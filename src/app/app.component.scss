@@ -1,0 +1,15 @@
+.content {
+  display: flex;
+}
+
+.musicBlock {
+  flex: 1 1 100%;
+  height: 85vh;
+  background-color: blue;
+}
+
+.playBlock {
+  flex: 1 1 100%;
+  height: 15vh;
+  background-color: #21292F;
+}
