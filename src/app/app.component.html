@@ -1,31 +1,159 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="content">
   <div class="musicBlock">
-    <div class="menu"></div>
-    <div class="musicList">
-      <div class="banana"></div>
-      <div class="list"></div>
-      <div class="singer"></div>
+    <div class="row  no-gutters">
+      <div class="col-2 menu">
+
+        <h1>
+          <img src="./assets/headphones.svg" alt="headphones">
+          <span>音樂播放器</span>
+        </h1>
+
+        <div class="input-group m-t-36">
+          <input type="text" class="form-control" placeholder="搜尋">
+        </div>
+
+        <h1 class="m-t-36">
+          <span>我的音樂</span>
+        </h1>
+        <p>播放清單</p>
+        <p>歌手清單</p>
+        <p>專輯清單</p>
+        <p>歌曲清單</p>
+
+        <h1 class="m-t-36">
+          <span>新發現</span>
+        </h1>
+        <p>商店</p>
+        <p>廣播</p>
+        <p>喜愛</p>
+        <p>隨機</p>
+      </div>
+      <div class="col-8 musicList">
+        <div class="banana">
+          <span class="singerName">HYUKOH</span>
+          <span class="followers">Followers</span>
+          <span class="followersCounts">30,000,000</span>
+          <button type="button" class="btn btn-outline-white">FOLLOW</button>
+        </div>
+        <div class="row no-gutters">
+            <div class="list col-6">
+              <p>熱門音樂</p>
+              <div class="row">
+                <div class="col-2">
+                  <img src="./assets/TOMBOY@2x.png" alt="TOMBOY">
+                </div>
+                <div class="col-5">
+                  <p class="name">TOMBOY</p>
+                  <p class="singerName">HYUKOH</p>
+                </div>
+                <div class="col-1">
+                    <i class="fas fa-play"></i>
+                </div>
+                <div class="col-1">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="col-3">
+                  <p class="counts">123,45,78</p>
+                </div>
+              </div>
+            </div>
+            <div class="singer col-6">
+                <p>專輯清單</p>
+                <div class="row">
+                  <div class="col-2">
+                      <img src="./assets/Album 24@2x.png" alt="Album 24">
+                  </div>
+                  <div class="col-2">
+                      <img src="./assets/Album 23@2x.png" alt="Album 23">
+                  </div>
+                  <div class="col-2">
+                      <img src="./assets/Album 22@2x.png" alt="Album 22">
+                  </div>
+                  <div class="col-2">
+                      <img src="./assets/Album 20@2x.png" alt="Album 20">
+                  </div>
+                  <div class="col-2"></div>
+                  <div class="col-2"></div>
+                </div>
+                <p>相似藝人</p>
+                <div class="row">
+                  <div class="col-2">
+                      <img src="./assets/Millic@2x.png" style="height: 55px" alt="Millic">
+                  </div>
+                  <div class="col-2">
+                      <img src="./assets/Car, the garden@2x.png" style="height: 55px" alt="Car, the garden@2x">
+                  </div>
+                  <div class="col-2">
+                      <img src="./assets/Code Kunst@2x.png" style="height: 55px" alt="Code Kunst@2x">
+                  </div>
+                  <div class="col-2">
+                      <img src="./assets/Rad Museum@2x.png" style="height: 55px" alt="Rad Museum@2x">
+                  </div>
+                  <div class="col-2">
+                      <img src="./assets/Rad Museum-1@2x.png" style="height: 55px" alt="Rad Museum-1@2x">
+                  </div>
+                  <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-2 profile">
+        <div class="mySet">
+          <img src="./assets/Profile-circle.svg" alt="Profile-circle" style="background-color: white">
+          <span>馬達</span>
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-bell"></i>
+          <i class="fas fa-home"></i>
+        </div>
+        <div class="addMusicList">
+          <p>建立自己的播放清單</p>
+          <span style="font-size: 3em; color: #00F3FF;">
+              <i class="fas fa-plus-circle"></i>
+          </span>
+        </div>
+      </div>
     </div>
-    <div class="profile"></div>
   </div>
 </div>
 <div class="playBlock">
-  <div class="row">
-    <div class="col-2">123</div>
-    <div class="col-8">
-      <div class="row">
+  <div class="row align-items-center no-gutters p-t-20">
+    <div class="col-2  align-self-center"></div>
+    <div class="col-8  align-self-center">
+      <div class="row no-gutters">
         <div class="col-3">
           <img src="./assets/Button-random.svg" alt="Button-random">
-          <span><</span>
-          <img src="./assets/Button-Play.svg" alt="Button-Play">
-          <span>></span>
-          <img src="./assets/Cycle.svg" alt="Cycle">
+          <span>
+            < </span> <img src="./assets/Button-Play.svg" alt="Button-Play">
+              <span> > </span>
+              <img src="./assets/Cycle.svg" alt="Cycle">
         </div>
-        <div class="col-9"></div>
+        <div class="col-9">
+          <div class="row no-gutters p-t-5">
+            <div class="col-2 text-right">
+              <span>00:00</span>
+            </div>
+            <div class="col-8">
+              <div class="bar"></div>
+              <div class="linebar"></div>
+            </div>
+            <div class="col-2 text-left">
+              <span>00:00</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-2">789</div>
+    <div class="col-2  align-self-center">
+      <div class="row no-gutters">
+        <div class="col-4">
+          <img src="./assets/Button-Switches.svg" alt="Button-Switches">
+          <img src="./assets/Button-Sound-Enable.svg" alt="Button-Sound-Enable" style="width: 32px;height: 32px;"></div>
+        <div class="col-8">
+          <div class="lineMusic"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <router-outlet></router-outlet>

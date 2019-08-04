@@ -2,14 +2,242 @@
   display: flex;
 }
 
+h1 {
+  img {
+    height: 24px;
+    width: 24px;
+  }
+  span {
+    margin-left: 8px;
+    font-size: 18px;
+    color:#00F3FF;
+    font-family: Microsoft JhengHei;
+  }
+}
+
+p {
+  font-size: 14px;
+  color:white;
+  font-family: Microsoft JhengHei;
+
+}
+
 .musicBlock {
   flex: 1 1 100%;
-  height: 85vh;
-  background-color: blue;
+  height: 90vh;
+  background-color: #1E1E1E;
+  .menu {
+    margin-top: 24px;
+    padding: 0 64px;
+    height: 100%;
+    p {
+      margin-left: 8px;
+    }
+  }
+  .musicList {
+    background: 0 30%  no-repeat url("../assets/Image 8@2x.png");
+    .banana {
+      height: 300px;
+      .singerName {
+        font-size: 36px;
+        color:white;
+        font-family: Microsoft JhengHei;
+        position: absolute;
+        top: 130px;
+        left: 800px;
+      }
+      .followers {
+        font-size: 14px;
+        color:rgba(255, 255, 255, 0.5);
+        font-family: Microsoft JhengHei;
+        position: absolute;
+        top: 190px;
+        left: 890px;
+      }
+      .followersCounts {
+        font-size: 14px;
+        color:rgba(255, 255, 255, 0.5);
+        font-family: Microsoft JhengHei;
+        position: absolute;
+        top: 210px;
+        left: 890px;
+      }
+      .btn-outline-white {
+        position: absolute;
+        top: 260px;
+        left: 870px;
+      }
+    }
+    .list {
+      background-color: rgba(0, 0, 0, 0.9);
+      height: 350px;
+      padding: 24px 36px;
+      .row {
+        border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
+      }
+      i {
+        color: white;
+        margin-top: 10px;
+      }
+      img {
+        height: 40px;
+      }
+      p.singerName {
+        font-size: 14px;
+        font-family: Microsoft JhengHei;
+        color:#8E8E8E;
+        margin-bottom: 0;
+      }
+      p.name {
+        font-size: 14px;
+        font-family: Microsoft JhengHei;
+        color:#8E8E8E;
+        margin-bottom: 0;
+      }
+      .counts {
+        margin-top: 7px;
+      }
+    }
+    .singer {
+      background-color: rgba(0, 0, 0, 0.9);
+      height: 350px;
+      padding: 24px 36px;
+      img {
+        height: 80px;
+      }
+    }
+  }
+  .profile {
+    .mySet {
+      height: 60px;
+      background-color: #21292F;
+      padding: 12px 36px;
+      img {
+        height: 40px;
+        border-radius: 20px;
+      }
+      span {
+        padding-left: 12px;
+        font-size: 14px;
+        font-family:  Microsoft JhengHei;
+        color: white;
+      }
+      i {
+        padding-left: 12px;
+        color:white;
+      }
+      .fa-bell {
+        padding-left: 24px;
+      }
+    }
+    .addMusicList {
+      text-align: center;
+      padding-top: 240px;
+      p {
+        font-size: 14px;
+        font-family:  Microsoft JhengHei;
+        color: white;
+      }
+    }
+  }
+
 }
 
 .playBlock {
   flex: 1 1 100%;
-  height: 15vh;
+  height: 10vh;
   background-color: #21292F;
+  span {
+    color: white;
+  }
+  .bar {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #00F3FF;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+  }
+  .linebar {
+    width: 480px;
+    height: 2px;
+    background-color: #00F3FF;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .lineMusic {
+    width: 150px;
+    height: 2px;
+    background-color: #00F3FF;
+    margin-top: 10px;
+  }
+}
+
+.p-t-5 {
+  padding-top: 5px;
+}
+
+.p-t-16 {
+  padding-top: 16px;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.m-t-36 {
+  margin-top: 36px;
+}
+
+.m-t-24 {
+  margin-top: 24px;
+}
+
+.m-t-12 {
+  margin-top: 12px;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+input {
+  background-color: #1E1E1E;
+  border: 1px #00F3FF solid;
+  outline: none;
+  color:#00F3FF;
+  &:hover {
+    background-color: #1E1E1E;
+    border: 1px #00F3FF solid;
+    outline: none;
+  }
+  &:focus {
+    background-color: #1E1E1E;
+    border: 1px #00F3FF solid;
+    outline: none;
+  }
+}
+
+
+input[type=text]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #00F3FF;
+}
+
+input[type=text]::-moz-placeholder { /* Firefox 19+ */
+  color: #00F3FF;
+}
+
+input[type=text]:-ms-input-placeholder { /* IE 10+ */
+  color: #00F3FF;
+}
+
+input[type=text]:-moz-placeholder { /* Firefox 18- */
+  color: #00F3FF;
+}
+
+.btn-outline-white {
+  border: 1px white solid;
+  color: white;
+  padding: 0 16px;
 }
